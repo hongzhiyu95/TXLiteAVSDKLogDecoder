@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3384F9BD29E7F98400C1FDEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3384F9BC29E7F98400C1FDEA /* AppDelegate.m */; };
+		3384F9C029E7F98400C1FDEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3384F9BF29E7F98400C1FDEA /* ViewController.m */; };
+		3384F9C229E7F98500C1FDEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3384F9C129E7F98500C1FDEA /* Assets.xcassets */; };
+		3384F9C529E7F98500C1FDEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3384F9C329E7F98500C1FDEA /* Main.storyboard */; };
+		3384F9C729E7F98500C1FDEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3384F9C629E7F98500C1FDEA /* main.m */; };
+		3384F9D229E7F98500C1FDEA /* LiteAVSDKLogDecoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3384F9D129E7F98500C1FDEA /* LiteAVSDKLogDecoderTests.m */; };
+		3384F9DC29E7F98500C1FDEA /* LiteAVSDKLogDecoderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3384F9DB29E7F98500C1FDEA /* LiteAVSDKLogDecoderUITests.m */; };
+		3384F9DE29E7F98500C1FDEA /* LiteAVSDKLogDecoderUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3384F9DD29E7F98500C1FDEA /* LiteAVSDKLogDecoderUITestsLaunchTests.m */; };
+		3384F9EC29E808AF00C1FDEA /* TLDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3384F9EB29E808AF00C1FDEA /* TLDragView.m */; };
+		3384F9EF29E80B4E00C1FDEA /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3384F9EE29E80B4E00C1FDEA /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3384F9CE29E7F98500C1FDEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3384F9B029E7F98400C1FDEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3384F9B729E7F98400C1FDEA;
+			remoteInfo = LiteAVSDKLogDecoder;
+		};
+		3384F9D829E7F98500C1FDEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3384F9B029E7F98400C1FDEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3384F9B729E7F98400C1FDEA;
+			remoteInfo = LiteAVSDKLogDecoder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3384F9B829E7F98400C1FDEA /* LiteAVSDKLogDecoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiteAVSDKLogDecoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3384F9BB29E7F98400C1FDEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3384F9BC29E7F98400C1FDEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3384F9BE29E7F98400C1FDEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3384F9BF29E7F98400C1FDEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3384F9C129E7F98500C1FDEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3384F9C429E7F98500C1FDEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3384F9C629E7F98500C1FDEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3384F9C829E7F98500C1FDEA /* LiteAVSDKLogDecoder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiteAVSDKLogDecoder.entitlements; sourceTree = "<group>"; };
+		3384F9CD29E7F98500C1FDEA /* LiteAVSDKLogDecoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiteAVSDKLogDecoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3384F9D129E7F98500C1FDEA /* LiteAVSDKLogDecoderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiteAVSDKLogDecoderTests.m; sourceTree = "<group>"; };
+		3384F9D729E7F98500C1FDEA /* LiteAVSDKLogDecoderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiteAVSDKLogDecoderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3384F9DB29E7F98500C1FDEA /* LiteAVSDKLogDecoderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiteAVSDKLogDecoderUITests.m; sourceTree = "<group>"; };
+		3384F9DD29E7F98500C1FDEA /* LiteAVSDKLogDecoderUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiteAVSDKLogDecoderUITestsLaunchTests.m; sourceTree = "<group>"; };
+		3384F9EA29E808AF00C1FDEA /* TLDragView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLDragView.h; sourceTree = "<group>"; };
+		3384F9EB29E808AF00C1FDEA /* TLDragView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLDragView.m; sourceTree = "<group>"; };
+		3384F9EE29E80B4E00C1FDEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3384F9B529E7F98400C1FDEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3384F9EF29E80B4E00C1FDEA /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3384F9CA29E7F98500C1FDEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3384F9D429E7F98500C1FDEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3384F9AF29E7F98400C1FDEA = {
+			isa = PBXGroup;
+			children = (
+				3384F9BA29E7F98400C1FDEA /* LiteAVSDKLogDecoder */,
+				3384F9D029E7F98500C1FDEA /* LiteAVSDKLogDecoderTests */,
+				3384F9DA29E7F98500C1FDEA /* LiteAVSDKLogDecoderUITests */,
+				3384F9B929E7F98400C1FDEA /* Products */,
+				3384F9ED29E80B4E00C1FDEA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3384F9B929E7F98400C1FDEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3384F9B829E7F98400C1FDEA /* LiteAVSDKLogDecoder.app */,
+				3384F9CD29E7F98500C1FDEA /* LiteAVSDKLogDecoderTests.xctest */,
+				3384F9D729E7F98500C1FDEA /* LiteAVSDKLogDecoderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3384F9BA29E7F98400C1FDEA /* LiteAVSDKLogDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				3384F9BB29E7F98400C1FDEA /* AppDelegate.h */,
+				3384F9BC29E7F98400C1FDEA /* AppDelegate.m */,
+				3384F9BE29E7F98400C1FDEA /* ViewController.h */,
+				3384F9BF29E7F98400C1FDEA /* ViewController.m */,
+				3384F9C129E7F98500C1FDEA /* Assets.xcassets */,
+				3384F9C329E7F98500C1FDEA /* Main.storyboard */,
+				3384F9C629E7F98500C1FDEA /* main.m */,
+				3384F9C829E7F98500C1FDEA /* LiteAVSDKLogDecoder.entitlements */,
+				3384F9EA29E808AF00C1FDEA /* TLDragView.h */,
+				3384F9EB29E808AF00C1FDEA /* TLDragView.m */,
+			);
+			path = LiteAVSDKLogDecoder;
+			sourceTree = "<group>";
+		};
+		3384F9D029E7F98500C1FDEA /* LiteAVSDKLogDecoderTests */ = {
+			isa = PBXGroup;
+			children = (
+				3384F9D129E7F98500C1FDEA /* LiteAVSDKLogDecoderTests.m */,
+			);
+			path = LiteAVSDKLogDecoderTests;
+			sourceTree = "<group>";
+		};
+		3384F9DA29E7F98500C1FDEA /* LiteAVSDKLogDecoderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3384F9DB29E7F98500C1FDEA /* LiteAVSDKLogDecoderUITests.m */,
+				3384F9DD29E7F98500C1FDEA /* LiteAVSDKLogDecoderUITestsLaunchTests.m */,
+			);
+			path = LiteAVSDKLogDecoderUITests;
+			sourceTree = "<group>";
+		};
+		3384F9ED29E80B4E00C1FDEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3384F9EE29E80B4E00C1FDEA /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3384F9B729E7F98400C1FDEA /* LiteAVSDKLogDecoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3384F9E129E7F98500C1FDEA /* Build configuration list for PBXNativeTarget "LiteAVSDKLogDecoder" */;
+			buildPhases = (
+				3384F9B429E7F98400C1FDEA /* Sources */,
+				3384F9B529E7F98400C1FDEA /* Frameworks */,
+				3384F9B629E7F98400C1FDEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiteAVSDKLogDecoder;
+			productName = LiteAVSDKLogDecoder;
+			productReference = 3384F9B829E7F98400C1FDEA /* LiteAVSDKLogDecoder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3384F9CC29E7F98500C1FDEA /* LiteAVSDKLogDecoderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3384F9E429E7F98500C1FDEA /* Build configuration list for PBXNativeTarget "LiteAVSDKLogDecoderTests" */;
+			buildPhases = (
+				3384F9C929E7F98500C1FDEA /* Sources */,
+				3384F9CA29E7F98500C1FDEA /* Frameworks */,
+				3384F9CB29E7F98500C1FDEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3384F9CF29E7F98500C1FDEA /* PBXTargetDependency */,
+			);
+			name = LiteAVSDKLogDecoderTests;
+			productName = LiteAVSDKLogDecoderTests;
+			productReference = 3384F9CD29E7F98500C1FDEA /* LiteAVSDKLogDecoderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3384F9D629E7F98500C1FDEA /* LiteAVSDKLogDecoderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3384F9E729E7F98500C1FDEA /* Build configuration list for PBXNativeTarget "LiteAVSDKLogDecoderUITests" */;
+			buildPhases = (
+				3384F9D329E7F98500C1FDEA /* Sources */,
+				3384F9D429E7F98500C1FDEA /* Frameworks */,
+				3384F9D529E7F98500C1FDEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3384F9D929E7F98500C1FDEA /* PBXTargetDependency */,
+			);
+			name = LiteAVSDKLogDecoderUITests;
+			productName = LiteAVSDKLogDecoderUITests;
+			productReference = 3384F9D729E7F98500C1FDEA /* LiteAVSDKLogDecoderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3384F9B029E7F98400C1FDEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3384F9B729E7F98400C1FDEA = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					3384F9CC29E7F98500C1FDEA = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 3384F9B729E7F98400C1FDEA;
+					};
+					3384F9D629E7F98500C1FDEA = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 3384F9B729E7F98400C1FDEA;
+					};
+				};
+			};
+			buildConfigurationList = 3384F9B329E7F98400C1FDEA /* Build configuration list for PBXProject "LiteAVSDKLogDecoder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3384F9AF29E7F98400C1FDEA;
+			productRefGroup = 3384F9B929E7F98400C1FDEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3384F9B729E7F98400C1FDEA /* LiteAVSDKLogDecoder */,
+				3384F9CC29E7F98500C1FDEA /* LiteAVSDKLogDecoderTests */,
+				3384F9D629E7F98500C1FDEA /* LiteAVSDKLogDecoderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3384F9B629E7F98400C1FDEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3384F9C229E7F98500C1FDEA /* Assets.xcassets in Resources */,
+				3384F9C529E7F98500C1FDEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3384F9CB29E7F98500C1FDEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3384F9D529E7F98500C1FDEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3384F9B429E7F98400C1FDEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3384F9EC29E808AF00C1FDEA /* TLDragView.m in Sources */,
+				3384F9C029E7F98400C1FDEA /* ViewController.m in Sources */,
+				3384F9C729E7F98500C1FDEA /* main.m in Sources */,
+				3384F9BD29E7F98400C1FDEA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3384F9C929E7F98500C1FDEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3384F9D229E7F98500C1FDEA /* LiteAVSDKLogDecoderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3384F9D329E7F98500C1FDEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3384F9DE29E7F98500C1FDEA /* LiteAVSDKLogDecoderUITestsLaunchTests.m in Sources */,
+				3384F9DC29E7F98500C1FDEA /* LiteAVSDKLogDecoderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3384F9CF29E7F98500C1FDEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3384F9B729E7F98400C1FDEA /* LiteAVSDKLogDecoder */;
+			targetProxy = 3384F9CE29E7F98500C1FDEA /* PBXContainerItemProxy */;
+		};
+		3384F9D929E7F98500C1FDEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3384F9B729E7F98400C1FDEA /* LiteAVSDKLogDecoder */;
+			targetProxy = 3384F9D829E7F98500C1FDEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3384F9C329E7F98500C1FDEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3384F9C429E7F98500C1FDEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3384F9DF29E7F98500C1FDEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3384F9E029E7F98500C1FDEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3384F9E229E7F98500C1FDEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LiteAVSDKLogDecoder/LiteAVSDKLogDecoder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHDRCXNB5K;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yhz.LiteAVSDKLogDecoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		3384F9E329E7F98500C1FDEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LiteAVSDKLogDecoder/LiteAVSDKLogDecoder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHDRCXNB5K;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yhz.LiteAVSDKLogDecoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		3384F9E529E7F98500C1FDEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHDRCXNB5K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yhz.LiteAVSDKLogDecoderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiteAVSDKLogDecoder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiteAVSDKLogDecoder";
+			};
+			name = Debug;
+		};
+		3384F9E629E7F98500C1FDEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHDRCXNB5K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yhz.LiteAVSDKLogDecoderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiteAVSDKLogDecoder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiteAVSDKLogDecoder";
+			};
+			name = Release;
+		};
+		3384F9E829E7F98500C1FDEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHDRCXNB5K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yhz.LiteAVSDKLogDecoderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = LiteAVSDKLogDecoder;
+			};
+			name = Debug;
+		};
+		3384F9E929E7F98500C1FDEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHDRCXNB5K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yhz.LiteAVSDKLogDecoderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = LiteAVSDKLogDecoder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3384F9B329E7F98400C1FDEA /* Build configuration list for PBXProject "LiteAVSDKLogDecoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3384F9DF29E7F98500C1FDEA /* Debug */,
+				3384F9E029E7F98500C1FDEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3384F9E129E7F98500C1FDEA /* Build configuration list for PBXNativeTarget "LiteAVSDKLogDecoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3384F9E229E7F98500C1FDEA /* Debug */,
+				3384F9E329E7F98500C1FDEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3384F9E429E7F98500C1FDEA /* Build configuration list for PBXNativeTarget "LiteAVSDKLogDecoderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3384F9E529E7F98500C1FDEA /* Debug */,
+				3384F9E629E7F98500C1FDEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3384F9E729E7F98500C1FDEA /* Build configuration list for PBXNativeTarget "LiteAVSDKLogDecoderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3384F9E829E7F98500C1FDEA /* Debug */,
+				3384F9E929E7F98500C1FDEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3384F9B029E7F98400C1FDEA /* Project object */;
+}
