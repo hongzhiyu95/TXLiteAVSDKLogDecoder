@@ -715,6 +715,9 @@
                             </customView>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="_dragView" destination="V1Y-Aj-aXz" id="2fW-HX-zML"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

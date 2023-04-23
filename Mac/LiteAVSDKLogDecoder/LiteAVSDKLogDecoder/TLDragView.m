@@ -33,7 +33,9 @@
   
     } else if ( [[pboard types] containsObject:NSFilenamesPboardType] ) {
         NSArray *files = [pboard propertyListForType:NSFilenamesPboardType];
- 
+        if ([self.dragDelegate respondsToSelector:@selector(dragEnteredFiles:)]){
+            [self.dragDelegate dragEnteredFiles:files];
+        }
         // Depending on the dragging source and modifier keys,
         // the file data may be copied or linked
         if (sourceDragMask & NSDragOperationLink) {
@@ -46,7 +48,18 @@
     return NSDragOperationNone;
 }
 -(void)draggingEnded:(id<NSDraggingInfo>)sender{
-  
+    NSPasteboard *pboard;
+    NSDragOperation sourceDragMask;
+ 
+    sourceDragMask = [sender draggingSourceOperationMask];
+    pboard = [sender draggingPasteboard];
+    if ( [[pboard types] containsObject:NSFilenamesPboardType] ) {
+        NSArray *files = [pboard propertyListForType:NSFilenamesPboardType];
+        if ([self.dragDelegate respondsToSelector:@selector(dragEndedFiles:)]){
+            [self.dragDelegate dragEndedFiles:files];
+        }
+        
+    }
     NSLog(@"拖完了");
     
 }
