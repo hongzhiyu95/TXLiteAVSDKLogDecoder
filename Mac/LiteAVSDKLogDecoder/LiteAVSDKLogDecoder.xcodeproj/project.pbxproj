@@ -61,6 +61,7 @@
 		3384F9EA29E808AF00C1FDEA /* TLDragView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLDragView.h; sourceTree = "<group>"; };
 		3384F9EB29E808AF00C1FDEA /* TLDragView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLDragView.m; sourceTree = "<group>"; };
 		3384F9EE29E80B4E00C1FDEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		33A10A3629F5373000FCBE60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +116,7 @@
 		3384F9BA29E7F98400C1FDEA /* LiteAVSDKLogDecoder */ = {
 			isa = PBXGroup;
 			children = (
+				33A10A3629F5373000FCBE60 /* Info.plist */,
 				3384F9BB29E7F98400C1FDEA /* AppDelegate.h */,
 				3384F9BC29E7F98400C1FDEA /* AppDelegate.m */,
 				3384F9BE29E7F98400C1FDEA /* ViewController.h */,
@@ -460,6 +462,7 @@
 				DEVELOPMENT_TEAM = UHDRCXNB5K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiteAVSDKLogDecoder/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -486,6 +489,7 @@
 				DEVELOPMENT_TEAM = UHDRCXNB5K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiteAVSDKLogDecoder/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
