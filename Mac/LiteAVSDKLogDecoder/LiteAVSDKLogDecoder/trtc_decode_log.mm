@@ -36,7 +36,7 @@ TRTCDecodeLog::~TRTCDecodeLog() {
 void TRTCDecodeLog::setDecodeCallBack(TRTCDecodeCallback *callback){
     _callBack = callback;
 }
-void TRTCDecodeLog::parseFile(const std::string& path,const std::string& outpath) {
+void TRTCDecodeLog::parseFile(const std::string& path) {
     m_inFile.open(path.c_str(), std::ios::in | std::ios::binary);
     if (!m_inFile.is_open())
     {
@@ -51,7 +51,6 @@ void TRTCDecodeLog::parseFile(const std::string& path,const std::string& outpath
     m_fileExt = fileName.substr(fileName.rfind('.') + 1, fileName.length());
 
     std::string outFilePath = path + ".log";
-    const char * outfile = outFilePath.c_str();
    // m_outFile.write(outfile, 0);
     m_outFile.open(outFilePath, std::ios::app);
     if (!m_outFile.is_open())
@@ -62,7 +61,7 @@ void TRTCDecodeLog::parseFile(const std::string& path,const std::string& outpath
     {
         printf("url:%s decode log success\n", outFilePath.c_str());
         if (_callBack != NULL) {
-            _callBack->decodeComplete(this,outpath);
+            _callBack->decodeComplete(this);
 
         }
         

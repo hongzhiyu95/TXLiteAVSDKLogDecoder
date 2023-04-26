@@ -9,6 +9,15 @@
 
 @implementation TLDragView
 
+
+-(BOOL)isSurportToDecodeFile:(NSString *)filePath{
+    NSString *fileName = [[filePath componentsSeparatedByString:@"/"]lastObject];
+    if([fileName hasSuffix:@".clog"]||[fileName hasSuffix:@".xlog"]){
+        return YES;
+    }else{
+        return NO;
+    }
+}
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
     self.canDrawConcurrently = YES;
@@ -27,14 +36,17 @@
     sourceDragMask = [sender draggingSourceOperationMask];
     pboard = [sender draggingPasteboard];
  
-    if ( [[pboard types] containsObject:NSColorPboardType] ) {
-        // Only a copy operation allowed so just copy the data
-        NSColor *newColor = [NSColor colorFromPasteboard:pboard];
-  
-    } else if ( [[pboard types] containsObject:NSFilenamesPboardType] ) {
+    if ( [[pboard types] containsObject:NSFilenamesPboardType] ) {
         NSArray *files = [pboard propertyListForType:NSFilenamesPboardType];
         if ([self.dragDelegate respondsToSelector:@selector(dragEnteredFiles:)]){
-            [self.dragDelegate dragEnteredFiles:files];
+            for (NSString *filePath in files) {
+                if([self isSurportToDecodeFile:filePath]){
+                    return NSDragOperationCopy;
+                }else{
+                    return NSDragOperationNone;
+                }
+            }
+          //  [self.dragDelegate dragEnteredFiles:files];
         }
         // Depending on the dragging source and modifier keys,
         // the file data may be copied or linked

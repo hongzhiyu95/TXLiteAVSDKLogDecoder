@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "TLDecodeHandler.h"
 @interface AppDelegate ()
 
 
@@ -22,7 +22,13 @@
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
 }
-
+- (void)application:(NSApplication *)application openURLs:(NSArray<NSURL *> *)urls{
+    for (NSURL *fileUrl in urls) {
+        NSString *filePath = [fileUrl path];
+        TLDecodeHandler *decodehandler = [TLDecodeHandler new];
+        [decodehandler decodeWithFilePath:filePath];
+    }
+}
 
 - (BOOL)applicationSupportsSecureRestorableState:(NSApplication *)app {
     return YES;

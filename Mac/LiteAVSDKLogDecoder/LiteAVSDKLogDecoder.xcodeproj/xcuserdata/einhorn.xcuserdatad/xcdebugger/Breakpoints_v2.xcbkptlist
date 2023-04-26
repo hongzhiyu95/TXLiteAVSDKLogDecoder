@@ -19,16 +19,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A1902B0F-49AA-4812-8B75-FD2631457228"
+            uuid = "03C07E1A-972D-452F-9AFB-7298D4512631"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LiteAVSDKLogDecoder/ViewController.mm"
+            filePath = "LiteAVSDKLogDecoder/AppDelegate.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "-dragEndedFiles:"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "-applicationDidFinishLaunching:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

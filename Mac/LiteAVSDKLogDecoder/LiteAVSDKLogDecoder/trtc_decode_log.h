@@ -7,7 +7,7 @@ class TRTCDecodeCallback {
     
    
 public:
-    virtual void decodeComplete(TRTCDecodeLog *decoder,const std::string &filePath){};
+    virtual void decodeComplete(TRTCDecodeLog *decoder){};
     TRTCDecodeCallback(){};
     ~TRTCDecodeCallback(){};
 };
@@ -17,7 +17,7 @@ public:
     TRTCDecodeLog();
     ~TRTCDecodeLog();
     void setDecodeCallBack(TRTCDecodeCallback* callback);
-    void parseFile(const std::string& path,const std::string& outpath);
+    void parseFile(const std::string& path);
 private:
     bool decode();
 

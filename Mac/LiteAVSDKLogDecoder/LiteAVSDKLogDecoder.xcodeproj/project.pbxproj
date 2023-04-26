@@ -11,7 +11,7 @@
 		3326EB3229EE452900199918 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3326EB3129EE452200199918 /* libz.tbd */; };
 		3326EB3429EE454900199918 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3326EB3329EE453E00199918 /* libc++.tbd */; };
 		3384F9BD29E7F98400C1FDEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3384F9BC29E7F98400C1FDEA /* AppDelegate.m */; };
-		3384F9C029E7F98400C1FDEA /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3384F9BF29E7F98400C1FDEA /* ViewController.mm */; };
+		3384F9C029E7F98400C1FDEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3384F9BF29E7F98400C1FDEA /* ViewController.m */; };
 		3384F9C229E7F98500C1FDEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3384F9C129E7F98500C1FDEA /* Assets.xcassets */; };
 		3384F9C529E7F98500C1FDEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3384F9C329E7F98500C1FDEA /* Main.storyboard */; };
 		3384F9C729E7F98500C1FDEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3384F9C629E7F98500C1FDEA /* main.m */; };
@@ -20,6 +20,8 @@
 		3384F9DE29E7F98500C1FDEA /* LiteAVSDKLogDecoderUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3384F9DD29E7F98500C1FDEA /* LiteAVSDKLogDecoderUITestsLaunchTests.m */; };
 		3384F9EC29E808AF00C1FDEA /* TLDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3384F9EB29E808AF00C1FDEA /* TLDragView.m */; };
 		3384F9EF29E80B4E00C1FDEA /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3384F9EE29E80B4E00C1FDEA /* AppKit.framework */; };
+		33A10B0729F9328C00FCBE60 /* TLDecodeHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33A10B0629F9328C00FCBE60 /* TLDecodeHandler.mm */; };
+		33A10B0929F9416E00FCBE60 /* Mac_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 33A10B0829F9416E00FCBE60 /* Mac_16.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,7 @@
 		3384F9BB29E7F98400C1FDEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3384F9BC29E7F98400C1FDEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3384F9BE29E7F98400C1FDEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3384F9BF29E7F98400C1FDEA /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		3384F9BF29E7F98400C1FDEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3384F9C129E7F98500C1FDEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3384F9C429E7F98500C1FDEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3384F9C629E7F98500C1FDEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -62,6 +64,9 @@
 		3384F9EB29E808AF00C1FDEA /* TLDragView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLDragView.m; sourceTree = "<group>"; };
 		3384F9EE29E80B4E00C1FDEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		33A10A3629F5373000FCBE60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		33A10B0529F9328C00FCBE60 /* TLDecodeHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLDecodeHandler.h; sourceTree = "<group>"; };
+		33A10B0629F9328C00FCBE60 /* TLDecodeHandler.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TLDecodeHandler.mm; sourceTree = "<group>"; };
+		33A10B0829F9416E00FCBE60 /* Mac_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mac_16.png; path = Assets.xcassets/AppIcon.appiconset/Mac_16.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,11 +121,12 @@
 		3384F9BA29E7F98400C1FDEA /* LiteAVSDKLogDecoder */ = {
 			isa = PBXGroup;
 			children = (
+				33A10B0829F9416E00FCBE60 /* Mac_16.png */,
 				33A10A3629F5373000FCBE60 /* Info.plist */,
 				3384F9BB29E7F98400C1FDEA /* AppDelegate.h */,
 				3384F9BC29E7F98400C1FDEA /* AppDelegate.m */,
 				3384F9BE29E7F98400C1FDEA /* ViewController.h */,
-				3384F9BF29E7F98400C1FDEA /* ViewController.mm */,
+				3384F9BF29E7F98400C1FDEA /* ViewController.m */,
 				3384F9C129E7F98500C1FDEA /* Assets.xcassets */,
 				3384F9C329E7F98500C1FDEA /* Main.storyboard */,
 				3384F9C629E7F98500C1FDEA /* main.m */,
@@ -129,6 +135,8 @@
 				3384F9EB29E808AF00C1FDEA /* TLDragView.m */,
 				3326EB2E29EE44C900199918 /* trtc_decode_log.mm */,
 				3326EB2F29EE44C900199918 /* trtc_decode_log.h */,
+				33A10B0529F9328C00FCBE60 /* TLDecodeHandler.h */,
+				33A10B0629F9328C00FCBE60 /* TLDecodeHandler.mm */,
 			);
 			path = LiteAVSDKLogDecoder;
 			sourceTree = "<group>";
@@ -265,6 +273,7 @@
 			files = (
 				3384F9C229E7F98500C1FDEA /* Assets.xcassets in Resources */,
 				3384F9C529E7F98500C1FDEA /* Main.storyboard in Resources */,
+				33A10B0929F9416E00FCBE60 /* Mac_16.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,9 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A10B0729F9328C00FCBE60 /* TLDecodeHandler.mm in Sources */,
 				3384F9EC29E808AF00C1FDEA /* TLDragView.m in Sources */,
 				3326EB3029EE44C900199918 /* trtc_decode_log.mm in Sources */,
-				3384F9C029E7F98400C1FDEA /* ViewController.mm in Sources */,
+				3384F9C029E7F98400C1FDEA /* ViewController.m in Sources */,
 				3384F9C729E7F98500C1FDEA /* main.m in Sources */,
 				3384F9BD29E7F98400C1FDEA /* AppDelegate.m in Sources */,
 			);
@@ -463,6 +473,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LiteAVSDKLogDecoder/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -490,6 +501,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LiteAVSDKLogDecoder/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
