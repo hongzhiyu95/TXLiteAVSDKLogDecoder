@@ -7,7 +7,8 @@ class TRTCDecodeCallback {
     
    
 public:
-    virtual void decodeComplete(TRTCDecodeLog *decoder){};
+    virtual void decodeComplete(TRTCDecodeLog *decoder,std::string outfilePath){};
+    virtual void decodeFailed(TRTCDecodeLog *decoder,std::string reason){};
     TRTCDecodeCallback(){};
     ~TRTCDecodeCallback(){};
 };

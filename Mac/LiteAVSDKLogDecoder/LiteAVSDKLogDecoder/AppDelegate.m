@@ -26,7 +26,7 @@
     for (NSURL *fileUrl in urls) {
         NSString *filePath = [fileUrl path];
         TLDecodeHandler *decodehandler = [TLDecodeHandler new];
-        [decodehandler decodeWithFilePath:filePath];
+        [decodehandler decodeWithFilePath:filePath isOpenWithConsole:YES];
     }
 }
 
@@ -34,5 +34,21 @@
     return YES;
 }
 
+//-(BOOL)application:(NSApplication *)sender openFile:(NSString *)filename{
+//    NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+//    openPanel.prompt = @"选择";
+//    openPanel.title = @"NSSplitView Demo";
+//    openPanel.message = @"你是谁的谁";
+//    openPanel.canChooseFiles = YES;
+//    openPanel.canChooseDirectories = YES;
+//    [openPanel beginSheetModalForWindow:self.window completionHandler:^(NSModalResponse result) {
+//        if (result == NSModalResponseOK) {
+//            NSLog(@"%@", openPanel.URL.path);
+//        }
+////        sender.state = NSControlStateValueOff;
+//    }];
+//
+//    return YES;
+//}
 
 @end

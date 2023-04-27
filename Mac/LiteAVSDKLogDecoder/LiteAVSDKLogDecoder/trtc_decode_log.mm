@@ -40,7 +40,12 @@ void TRTCDecodeLog::parseFile(const std::string& path) {
     m_inFile.open(path.c_str(), std::ios::in | std::ios::binary);
     if (!m_inFile.is_open())
     {
+        std::string errmessage = "TRTCDecodeLog::setPath"+ path + "opening failed!";
         printf("TRTCDecodeLog::setPath %s file opening failed!\n", path.c_str());
+        if (_callBack != NULL) {
+            _callBack->decodeFailed(this, errmessage);
+
+        }
         return;
     }
 
@@ -55,20 +60,30 @@ void TRTCDecodeLog::parseFile(const std::string& path) {
     m_outFile.open(outFilePath, std::ios::app);
     if (!m_outFile.is_open())
     {
+        std::string errmessage = "TRTCDecodeLog::setPath"+ outFilePath + "creationfaild";
         printf("TRTCDecodeLog::setPath %s file creation failed!\n", outFilePath.c_str());
+        if (_callBack != NULL) {
+            _callBack->decodeFailed(this, errmessage);
+
+        }
     }
     if (decode())
     {
         printf("url:%s decode log success\n", outFilePath.c_str());
         if (_callBack != NULL) {
-            _callBack->decodeComplete(this);
-
+            _callBack->decodeComplete(this,outFilePath);
+         
         }
         
     }
     else
     {
+        std::string errmessage = "decode "+path +" failed outfile is created with "+ outFilePath;
         printf("url:%s decode log fail\n", outFilePath.c_str());
+        if (_callBack != NULL) {
+            _callBack->decodeFailed(this, errmessage);
+
+        }
     }
 }
 

@@ -12,6 +12,7 @@
 
 
 @interface ViewController ()<TLDragDelegate>
+@property (weak) IBOutlet NSButton *openWithConsoleCheck;
 
 @end
 
@@ -28,12 +29,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _dragView.dragDelegate = self;
-    
+
    
     // Do any additional setup after loading the view.
 }
 
-
+-(IBAction)openDocument:(NSButton* )sender{
+    NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+      openPanel.prompt = @"选择";
+      openPanel.title = @"NSSplitView Demo";
+      openPanel.message = @"";
+      openPanel.canChooseFiles = YES;
+      openPanel.canChooseDirectories = YES;
+      [openPanel beginSheetModalForWindow:self.view.window completionHandler:^(NSModalResponse result) {
+          if (result == NSModalResponseOK) {
+              NSLog(@"%@", openPanel.URL.path);
+              TLDecodeHandler *decodeHandler  = [TLDecodeHandler new];
+              [decodeHandler decodeWithFilePath:openPanel.URL.path isOpenWithConsole:YES];
+              
+          }
+          sender.state = NSControlStateValueOff;
+      }];
+}
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
 
@@ -45,7 +62,7 @@
 -(void)dragEndedFiles:(NSArray<NSString *> *)files{
     for (NSString *filePath in files ) {
         TLDecodeHandler *decodeHandler  = [TLDecodeHandler new];
-        [decodeHandler decodeWithFilePath:filePath];
+        [decodeHandler decodeWithFilePath:filePath isOpenWithConsole:_openWithConsoleCheck.state];
         
        
     }

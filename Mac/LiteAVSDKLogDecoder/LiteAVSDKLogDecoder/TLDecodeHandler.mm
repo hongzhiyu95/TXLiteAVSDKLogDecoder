@@ -10,7 +10,7 @@
 #import <string>
 using namespace std;
 class MyDecodeCallBack:public TRTCDecodeCallback{
-    void decodeComplete(TRTCDecodeLog *decoder) override{
+    void decodeComplete(TRTCDecodeLog *decoder ,string filePath) override{
     }
 };
 @implementation TLDecodeHandler
@@ -22,7 +22,15 @@ class MyDecodeCallBack:public TRTCDecodeCallback{
         return NO;
     }
 }
--(void)decodeWithFilePath:(NSString *)filePath{
+-(void)openConsoleWithLogPath:(NSString *)filePath{
+     NSTask *task = [NSTask new];
+      [task setLaunchPath:@"/usr/bin/open"];
+      NSArray * args = [[NSArray alloc] initWithObjects:@"/System/Applications/Utilities/Console.app",filePath, nil];
+      [task setArguments:args];
+      [task launch];
+      [task waitUntilExit];
+}
+-(void)decodeWithFilePath:(NSString *)filePath isOpenWithConsole:(BOOL)enable{
     if([self isSurportToDecodeFile:filePath]){
      
         NSString *outDir = [filePath stringByAppendingString:@".log"];
@@ -40,6 +48,9 @@ class MyDecodeCallBack:public TRTCDecodeCallback{
         const char * outfileCstr = [outDir cStringUsingEncoding:NSASCIIStringEncoding];
         string filePathCppString(fileCstr,fileCstr+strlen(fileCstr));
         decoder->parseFile(filePathCppString);
+        if(enable){
+            [self openConsoleWithLogPath:outDir];
+        }
         delete  decoder;
     }
 }
