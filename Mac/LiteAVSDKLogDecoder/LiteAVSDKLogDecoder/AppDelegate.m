@@ -26,7 +26,10 @@
     for (NSURL *fileUrl in urls) {
         NSString *filePath = [fileUrl path];
         TLDecodeHandler *decodehandler = [TLDecodeHandler new];
+       
         [decodehandler decodeWithFilePath:filePath isOpenWithConsole:YES];
+        
+        
     }
 }
 

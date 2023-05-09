@@ -62,7 +62,7 @@
 -(void)dragEndedFiles:(NSArray<NSString *> *)files{
     for (NSString *filePath in files ) {
         TLDecodeHandler *decodeHandler  = [TLDecodeHandler new];
-        [decodeHandler decodeWithFilePath:filePath isOpenWithConsole:_openWithConsoleCheck.state];
+        [decodeHandler decodeWithFilePath:filePath isOpenWithConsole:(_openWithConsoleCheck.state&&files.count<=2)];
         
        
     }

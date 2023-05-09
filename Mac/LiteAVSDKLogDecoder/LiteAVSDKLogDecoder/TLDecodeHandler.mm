@@ -7,6 +7,7 @@
 
 #import "TLDecodeHandler.h"
 #import "trtc_decode_log.h"
+#import <AppKit/AppKit.h>
 #import <string>
 using namespace std;
 class MyDecodeCallBack:public TRTCDecodeCallback{
@@ -23,12 +24,14 @@ class MyDecodeCallBack:public TRTCDecodeCallback{
     }
 }
 -(void)openConsoleWithLogPath:(NSString *)filePath{
-     NSTask *task = [NSTask new];
-      [task setLaunchPath:@"/usr/bin/open"];
-      NSArray * args = [[NSArray alloc] initWithObjects:@"/System/Applications/Utilities/Console.app",filePath, nil];
-      [task setArguments:args];
-      [task launch];
-      [task waitUntilExit];
+//     NSTask *task = [NSTask new];
+//      [task setLaunchPath:@"/usr/bin/open"];
+//      NSArray * args = [[NSArray alloc] initWithObjects:@"/System/Applications/Utilities/Console.app",filePath, nil];
+//      [task setArguments:args];
+//      [task launch];
+//      [task waitUntilExit];
+    [[NSWorkspace sharedWorkspace]openFile:filePath];
+    
 }
 -(void)decodeWithFilePath:(NSString *)filePath isOpenWithConsole:(BOOL)enable{
     if([self isSurportToDecodeFile:filePath]){
@@ -44,8 +47,9 @@ class MyDecodeCallBack:public TRTCDecodeCallback{
         TRTCDecodeLog *decoder = new TRTCDecodeLog();
         MyDecodeCallBack *callbk = new MyDecodeCallBack();
         decoder->setDecodeCallBack(callbk);
-        const char *fileCstr = [filePath cStringUsingEncoding:NSASCIIStringEncoding];
-        const char * outfileCstr = [outDir cStringUsingEncoding:NSASCIIStringEncoding];
+        const char * fileCstr = [filePath cStringUsingEncoding:NSUTF8StringEncoding];
+      
+       
         string filePathCppString(fileCstr,fileCstr+strlen(fileCstr));
         decoder->parseFile(filePathCppString);
         if(enable){
